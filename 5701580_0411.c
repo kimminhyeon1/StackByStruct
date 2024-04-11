@@ -23,7 +23,6 @@ void init(StackType* sptr) {
 }
 //is_full
 int is_full(StackType *sptr) {
-	
 	return (sptr->top == (sptr->capacity - 1));
 }
 
