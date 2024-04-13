@@ -84,11 +84,13 @@ int main(int argc, char* argv[]) {
 		printf("%d\n", rand_num);
 		if (rand_num % 2 == 0) {
 			push(&s, rand_num);
-			printf("Push Stack S %d\n", rand_num);
+			printf("Push Stack S %d\n\n", rand_num);
 		}
 		else {
 			rand_num = pop(&s);
-			printf("Pop Stack S %d\n", rand_num);
+			printf("Pop Stack S %d\n\n", rand_num);
 		}
 	}
+	free(s.data);
+	return 0;
 }
